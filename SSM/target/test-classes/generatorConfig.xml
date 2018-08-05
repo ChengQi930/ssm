@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <context id="context1" >
+  	<commentGenerator>
+		<property name="suppressAllComments" value="true" />
+	</commentGenerator>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/permission?characterEncoding=gbk" userId="root" password="123456" />
+    <javaModelGenerator targetPackage="cn.bizowner.model" targetProject=".\src\main\java" ></javaModelGenerator>
+    <sqlMapGenerator targetPackage="mapper" targetProject=".\src\main\resources" ></sqlMapGenerator>
+    <javaClientGenerator  targetPackage="cn.bizowner.mapper" targetProject=".\src\main\java" type="XMLMAPPER" />
+    
+    <!-- mybatis逆向工程不要在这里写关系表 :写实体表就行！！ -->
+    <table schema="" tableName="user" ></table>
+    <table schema=" " tableName="permission"></table>
+    <table schema=" " tableName="role"></table>
+  </context>
+</generatorConfiguration>
