@@ -1,0 +1,309 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.bizowner</groupId>
+	<artifactId>ImPriMgr</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ImPriMgr Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEndcoding>UTF-8</project.reporting.outputEndcoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+
+	<dependencies>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+			<!--使用下面这个和上面排除spring-boot-starter-logging是一样的效果 <exclusions> <exclusion> 
+				<artifactId>logback-classic</artifactId> <groupId>ch.qos.logback</groupId> 
+				</exclusion> <exclusion> <artifactId>log4j-over-slf4j</artifactId> <groupId>org.slf4j</groupId> 
+				</exclusion> </exclusions> -->
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>client-sdk</groupId>
+			<artifactId>client-sdk.api-1.0.0</artifactId>
+			<scope>system</scope>
+			<version>1.0.0</version>
+			<systemPath>${project.basedir}/lib/client-sdk.api-1.0.0.jar</systemPath>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>client-sdk</groupId>
+			<artifactId>client-sdk.common-1.0.0</artifactId>
+			<scope>system</scope>
+			<version>1.0.0</version>
+			<systemPath>${project.basedir}/lib/client-sdk.common-1.0.0.jar</systemPath>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>client-sdk</groupId>
+			<artifactId>client-sdk.core-1.0.0</artifactId>
+			<scope>system</scope>
+			<version>1.0.0</version>
+			<systemPath>${project.basedir}/lib/client-sdk.core-1.0.0.jar</systemPath>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>client-sdk</groupId>
+			<artifactId>client-sdk.spring-1.0.0</artifactId>
+			<scope>system</scope>
+			<version>1.0.0</version>
+			<systemPath>${project.basedir}/lib/client-sdk.spring-1.0.0.jar</systemPath>
+		</dependency>
+
+
+
+
+		<dependency>
+			<groupId>poi</groupId>
+			<artifactId>poi-3.14-20160307</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/poi-3.14-20160307.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>poi</groupId>
+			<artifactId>poi-examples-3.14-20160307</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/poi-examples-3.14-20160307.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>poi</groupId>
+			<artifactId>poi-excelant-3.14-20160307</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/poi-excelant-3.14-20160307.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>poi</groupId>
+			<artifactId>poi-ooxml-3.14-20160307</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/poi-ooxml-3.14-20160307.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>poi</groupId>
+			<artifactId>poi-ooxml-schemas-3.14-20160307</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/poi-ooxml-schemas-3.14-20160307.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>poi</groupId>
+			<artifactId>poi-scratchpad-3.14-20160307</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/poi-scratchpad-3.14-20160307.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>sqlite</groupId>
+			<artifactId>sqlitejdbc-v056</artifactId>
+			<scope>system</scope>
+			<version>3.14</version>
+			<systemPath>${project.basedir}/lib/sqlitejdbc-v056.jar</systemPath>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.clojars.cbilson</groupId>
+			<artifactId>pinyin4j</artifactId>
+			<scope>system</scope>
+			<version>2.5.0</version>
+			<systemPath>${project.basedir}/lib/pinyin4j-2.5.0.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.6</version>
+		</dependency>
+
+		<!-- 部署到tomcat时需要打开此项设置 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- 进行转换在pom.xml文件中加入 -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.23</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/sax/sax -->
+		<!-- <dependency> <groupId>sax</groupId> <artifactId>sax</artifactId> <version>2.0.1</version> 
+			</dependency> -->
+
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> 
+			</dependency> -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.41</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.3</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>ImPriMgr</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<webResources>
+						<resource>
+							<directory>lib</directory>
+							<targetPath>WEB-INF/lib/</targetPath>
+							<includes>
+								<include>**/*.jar</include>
+							</includes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+</project>

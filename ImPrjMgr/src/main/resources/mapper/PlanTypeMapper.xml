@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.PlanTypeMapper">
+    
+    
+	    <resultMap type="PlanType" id="planType">
+		    <result property="typeName" column="typeName"/>
+			<result property="typeValue" column="typeValue"/>
+		</resultMap>	
+		
+		
+		<select id="getPlanTypeList" resultMap="planType">
+	       		select typeName,typeValue from imp_project_plan_type order by typeValue
+		</select>
+		
+		
+		<select id="getTypeNameByTypeValue" resultType="java.lang.String">
+		    	select typeName from imp_project_plan_type where typeValue=#{typeValue}
+		</select>
+</mapper>

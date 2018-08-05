@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.PlanMapper">
+    
+    
+	    <resultMap type="Plan" id="plan">
+		    <result property="planId" column="planId"/>
+			<result property="proId" column="proId"/>
+			<result property="planTitle" column="planTitle"/>
+			<result property="startDate" column="startDate"/>
+			<result property="endDate" column="endDate"/>
+			<result property="type" column="type"/>
+			<result property="planStatus" column="planStatus"/>
+		</resultMap>	
+		
+	    <sql id="baseColumnList">
+				planId,proId,planTitle,startDate,endDate,type,planStatus
+		</sql>
+		    
+	    
+	    
+	    <sql id="planQueryCond">
+			<if test="planQueryInfo!=null">
+						<if test="planQueryInfo.proId!=null and planQueryInfo.proId!=''">
+							and	proId=#{planQueryInfo.proId}
+						</if>
+						<if test="planQueryInfo.type!=null and planQueryInfo.type!=''">
+									and	type=#{planQueryInfo.type}
+						</if>
+						<if test="planQueryInfo.startDate!=null and planQueryInfo.startDate!=''">
+									<![CDATA[ and startDate>=#{planQueryInfo.startDate} ]]>
+						</if>
+						<if test="planQueryInfo.endDate!=null and planQueryInfo.endDate!=''">
+									<![CDATA[ and endDate<=#{planQueryInfo.endDate} ]]>
+						</if>
+						<if test="planQueryInfo.planTitle!=null and planQueryInfo.planTitle!=''">
+									<![CDATA[ and planTitle like concat(concat('%',#{planQueryInfo.planTitle}),'%') ]]>
+						</if>
+						<if test="planQueryInfo.planStatus!=null and planQueryInfo.planStatus!=''">
+									and	planStatus=#{planQueryInfo.planStatus}
+						</if>
+			</if>
+		</sql>
+	    
+	    
+	    
+		
+		<insert id="addPlan">
+		    	insert into imp_project_plan(<include refid="baseColumnList" />) values 
+		    	(#{plan.planId},#{plan.proId},#{plan.planTitle},
+		    	#{plan.startDate},#{plan.endDate},#{plan.type},#{plan.planStatus})
+		</insert>
+		
+		
+		
+		<update id="updatePlan">
+		    	update imp_project_plan
+		    	<set>
+		    	    	<if test="plan.startDate!=null and plan.startDate!=''">
+								startDate=#{plan.startDate},
+						</if>	
+						<if test="plan.endDate!=null and plan.endDate!=''">
+								endDate=#{plan.endDate},
+						</if>
+						<if test="plan.planTitle!=null and plan.planTitle!=''">
+								planTitle=#{plan.planTitle},
+						</if>
+						<if test="plan.type!=null and plan.type!=''">
+								type=#{plan.type},
+						</if>
+		    	</set>
+		    	where planId=#{plan.planId}
+		</update>
+		
+		
+		<delete id="delPlan">
+		    	delete from imp_project_plan where planId=#{planId}
+		</delete>
+		
+		
+		<delete id="delPlanByProId">
+		    	delete from imp_project_plan where proId=#{proId}
+		</delete>
+
+		
+		<select id="getPlanCount"  resultType="java.lang.Integer">
+				select count(*) from imp_project_plan where 1=1
+				<include refid="planQueryCond"></include>
+		</select>
+		
+		<select id="getPlanList" resultMap="plan">
+	       		select <include refid="baseColumnList" /> from imp_project_plan where 1=1
+	       		<include refid="planQueryCond"></include>
+	       		<if test="limit gt 0">
+								limit #{limit} offset #{start}
+				</if>
+		</select>
+		 
+		
+		
+		<select id="getPlanInfoById" resultMap="plan">
+	       		select <include refid="baseColumnList" /> from imp_project_plan where
+	       		planId=#{planId}
+		</select>
+		
+		
+		
+		<select id="isPlanExist"  resultType="java.lang.Integer">
+				select count(*) from imp_project_plan where proId=#{proId} and type=#{type} and planStatus !=4
+		</select>
+		
+		<select id="getEndPlanId" resultMap="plan">
+		    SELECT <include refid="baseColumnList" /> FROM imp_project_plan as p
+			where p.proId = #{proId} AND p.type = #{type}
+			ORDER BY p.endDate DESC LIMIT 1
+		</select>
+		
+		<select id="getproStatus" resultType="plan">
+		    SELECT * FROM imp_project_plan
+            WHERE proId = #{proId}
+		</select>
+</mapper>

@@ -1,0 +1,76 @@
+2018-06-20 18:06:32,633 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8428 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-20 18:06:32,689 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-20 18:06:32,689 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-20 18:06:38,231 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 5.933 seconds (JVM running for 6.93)
+2018-06-20 18:06:57,755 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"error":"Session expired","flag":false}
+2018-06-20 18:07:03,209 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-20 18:07:03,229 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==> Parameters: 4f218846-5637-41b2-b988-e18a06fb1242(String)
+2018-06-20 18:07:03,244 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] <==      Total: 1
+2018-06-20 18:07:03,246 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-20 18:07:17,789 DEBUG c.b.m.P.addPro [http-nio-8080-exec-3] ==>  Preparing: insert into imp_project( proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus ) values (?,?,?,?, ?,?,?, ?,?,?) 
+2018-06-20 18:07:17,797 DEBUG c.b.m.P.addPro [http-nio-8080-exec-3] ==> Parameters: 124d7202-ec1e-4bac-b0d5-707c141e1d24(String), 刘杰Test123(String), 项目(String), 2018-06-20 00:00:00.0(Timestamp), 2018-06-20 18:07:17.788(Timestamp), 0951370504677976(String), 0951370504677976(String), 0951370504677976(String), 西安地税(String), 1(Integer)
+2018-06-20 18:07:17,833 DEBUG c.b.m.P.addPro [http-nio-8080-exec-3] <==    Updates: 1
+2018-06-20 18:07:17,838 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-20 18:09:14,584 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_project where 1=1 and proName=? 
+2018-06-20 18:09:14,585 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-4] ==> Parameters: 刘杰Test123(String)
+2018-06-20 18:09:14,587 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-4] <==      Total: 1
+2018-06-20 18:09:14,589 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-4] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where 1=1 and proName=? limit ? offset ? 
+2018-06-20 18:09:14,590 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-4] ==> Parameters: 刘杰Test123(String), 10(Integer), 0(Integer)
+2018-06-20 18:09:14,593 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-4] <==      Total: 1
+2018-06-20 18:09:17,363 INFO c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"errmsg":"找不到该用户","flag":false}
+2018-06-20 18:10:37,098 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-5] ==>  Preparing: select count(*) from imp_project where 1=1 and proName=? 
+2018-06-20 18:10:37,099 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-5] ==> Parameters: 刘杰Test123(String)
+2018-06-20 18:10:37,102 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-5] <==      Total: 1
+2018-06-20 18:10:37,103 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-5] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where 1=1 and proName=? limit ? offset ? 
+2018-06-20 18:10:37,103 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-5] ==> Parameters: 刘杰Test123(String), 10(Integer), 0(Integer)
+2018-06-20 18:10:37,106 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-5] <==      Total: 1
+2018-06-20 18:12:13,789 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 10204 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-20 18:12:13,796 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-20 18:12:13,796 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-20 18:12:19,516 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 6.012 seconds (JVM running for 7.243)
+2018-06-20 18:15:45,590 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-20 18:15:45,610 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: 4f218846-5637-41b2-b988-e18a06fb1242(String)
+2018-06-20 18:15:45,627 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 1
+2018-06-20 18:15:45,696 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-20 18:15:50,826 DEBUG c.b.m.P.addPro [http-nio-8080-exec-2] ==>  Preparing: insert into imp_project( proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus ) values (?,?,?,?, ?,?,?, ?,?,?) 
+2018-06-20 18:15:50,840 DEBUG c.b.m.P.addPro [http-nio-8080-exec-2] ==> Parameters: 9bcb1731-6d27-4e0b-94e7-b619f037714b(String), 刘杰Test123(String), 项目(String), 2018-06-20 00:00:00.0(Timestamp), 2018-06-20 18:15:50.161(Timestamp), 0951370504677976(String), 0951370504677976(String), 0951370504677976(String), 西安地税(String), 1(Integer)
+2018-06-20 18:15:50,904 DEBUG c.b.m.P.addPro [http-nio-8080-exec-2] <==    Updates: 1
+2018-06-20 18:15:50,911 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-20 18:16:09,017 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-3] ==>  Preparing: select count(*) from imp_project where 1=1 and proName=? 
+2018-06-20 18:16:09,018 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-3] ==> Parameters: 刘杰Test123(String)
+2018-06-20 18:16:09,020 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-3] <==      Total: 1
+2018-06-20 18:16:09,022 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-3] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where 1=1 and proName=? limit ? offset ? 
+2018-06-20 18:16:09,023 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-3] ==> Parameters: 刘杰Test123(String), 10(Integer), 0(Integer)
+2018-06-20 18:16:09,027 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-3] <==      Total: 2
+2018-06-20 18:16:21,132 INFO c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true,"result":{"count":2,"list":[{"createTime":"2018-06-20","createUserId":"0951370504677976","createUserMc":"刘杰","customer":"西安地税","estTime":"2018-06-20","impUserId":"0951370504677976","impUserMc":"刘杰","proId":"124d7202-ec1e-4bac-b0d5-707c141e1d24","proName":"刘杰Test123","proStatus":1,"proType":"项目","saleUserId":"0951370504677976","saleUserMc":"刘杰"},{"createTime":"2018-06-20","createUserId":"0951370504677976","createUserMc":"刘杰","customer":"西安地税","estTime":"2018-06-20","impUserId":"0951370504677976","impUserMc":"刘杰","proId":"9bcb1731-6d27-4e0b-94e7-b619f037714b","proName":"刘杰Test123","proStatus":1,"proType":"项目","saleUserId":"0951370504677976","saleUserMc":"刘杰"}]}}
+2018-06-20 18:20:01,710 DEBUG c.b.m.P.updatePro [http-nio-8080-exec-4] ==>  Preparing: update imp_project SET impUserId=?, saleUserId=? where proId=? 
+2018-06-20 18:20:01,711 DEBUG c.b.m.P.updatePro [http-nio-8080-exec-4] ==> Parameters: 051823170229712616(String), 051823170229712616(String), 124d7202-ec1e-4bac-b0d5-707c141e1d24(String)
+2018-06-20 18:20:01,756 DEBUG c.b.m.P.updatePro [http-nio-8080-exec-4] <==    Updates: 1
+2018-06-20 18:20:01,757 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-20 18:20:10,250 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-5] ==>  Preparing: select count(*) from imp_project where 1=1 and proName=? 
+2018-06-20 18:20:10,251 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-5] ==> Parameters: 刘杰Test123(String)
+2018-06-20 18:20:10,253 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-5] <==      Total: 1
+2018-06-20 18:20:10,254 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-5] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where 1=1 and proName=? limit ? offset ? 
+2018-06-20 18:20:10,255 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-5] ==> Parameters: 刘杰Test123(String), 10(Integer), 0(Integer)
+2018-06-20 18:20:10,258 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-5] <==      Total: 2
+2018-06-20 18:20:11,889 INFO c.b.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"flag":true,"result":{"count":2,"list":[{"createTime":"2018-06-20","createUserId":"0951370504677976","createUserMc":"刘杰","customer":"西安地税","estTime":"2018-06-20","impUserId":"051823170229712616","impUserMc":"田永峰","proId":"124d7202-ec1e-4bac-b0d5-707c141e1d24","proName":"刘杰Test123","proStatus":1,"proType":"项目","saleUserId":"051823170229712616","saleUserMc":"田永峰"},{"createTime":"2018-06-20","createUserId":"0951370504677976","createUserMc":"刘杰","customer":"西安地税","estTime":"2018-06-20","impUserId":"0951370504677976","impUserMc":"刘杰","proId":"9bcb1731-6d27-4e0b-94e7-b619f037714b","proName":"刘杰Test123","proStatus":1,"proType":"项目","saleUserId":"0951370504677976","saleUserMc":"刘杰"}]}}
+2018-06-20 18:25:44,619 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-6] ==>  Preparing: select count(*) from imp_project where 1=1 and proName=? 
+2018-06-20 18:25:44,621 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-6] ==> Parameters: 刘杰Test123(String)
+2018-06-20 18:25:44,624 DEBUG c.b.m.P.getProjectCount [http-nio-8080-exec-6] <==      Total: 1
+2018-06-20 18:25:44,625 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-6] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where 1=1 and proName=? limit ? offset ? 
+2018-06-20 18:25:44,626 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-6] ==> Parameters: 刘杰Test123(String), 10(Integer), 0(Integer)
+2018-06-20 18:25:44,630 DEBUG c.b.m.P.getProjectList [http-nio-8080-exec-6] <==      Total: 2
+2018-06-20 18:25:46,253 INFO c.b.u.JSONHelper [http-nio-8080-exec-6] 序列化后的JSON资料输出:
+{"flag":true,"result":{"count":2,"list":[{"createTime":"2018-06-20","createUserId":"0951370504677976","createUserMc":"刘杰","customer":"西安地税","estTime":"2018-06-20","impUserId":"051823170229712616","impUserMc":"田永峰","proId":"124d7202-ec1e-4bac-b0d5-707c141e1d24","proName":"刘杰Test123","proStatus":1,"proType":"项目","saleUserId":"051823170229712616","saleUserMc":"田永峰"},{"createTime":"2018-06-20","createUserId":"0951370504677976","createUserMc":"刘杰","customer":"西安地税","estTime":"2018-06-20","impUserId":"0951370504677976","impUserMc":"刘杰","proId":"9bcb1731-6d27-4e0b-94e7-b619f037714b","proName":"刘杰Test123","proStatus":1,"proType":"项目","saleUserId":"0951370504677976","saleUserMc":"刘杰"}]}}
+2018-06-20 18:40:05,753 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 10204 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-20 18:40:05,753 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-20 18:40:05,753 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default

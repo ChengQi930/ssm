@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bizowner.mapper.RoleQxMapper">
+
+    
+     <resultMap type="RoleQxInfo" id="roleQxInfo">
+	    <result property="funcId" column="funcId"/>
+		<result property="parentId" column="parentId"/>
+		<result property="funcName" column="funcName"/>
+		<result property="remark" column="remark"/>
+		<result property="enableFlag" column="enableFlag" javaType="Boolean" jdbcType="CHAR"/>
+	</resultMap>
+    	
+	
+	 
+	
+	<select id="getRoleQxList" resultMap="roleQxInfo">
+	   SELECT DISTINCT
+			imp_function.funcId,
+			imp_function.funcName,
+			imp_function.remark,
+			'Y' AS enableFlag
+		FROM
+			imp_function
+		LEFT JOIN imp_role_qx ON imp_function.funcId = imp_role_qx.funcId
+		WHERE 1=1
+		<choose>
+        	<when test="parentId !=null and parentId != ''">
+             	and imp_function.parentId=#{parentId}
+        	</when>
+       	 	<otherwise>
+            	and imp_function.parentId is null
+        	</otherwise>
+    	</choose>
+		AND imp_role_qx.roleId IN (
+			SELECT
+				roleId
+			FROM
+				imp_user_role
+			WHERE
+				userId = #{userId}
+		)
+	</select>
+	
+	
+	
+	
+	
+	<select id="getFunctionListByParentId" resultMap="roleQxInfo"> 
+		SELECT
+			imp_function.funcId,
+			imp_function.funcName,
+			imp_function.remark,
+			'Y' AS enableFlag
+		FROM
+			imp_function
+		LEFT JOIN imp_role_qx ON imp_function.funcId = imp_role_qx.funcId
+		WHERE
+			imp_role_qx.roleId = #{roleId}
+		<choose>
+        	<when test="parentId !=null and parentId != ''">
+             	and parentId=#{parentId}
+        	</when>
+       	 	<otherwise>
+            	and parentId is null
+        	</otherwise>
+    	</choose>
+		UNION ALL
+		SELECT
+			imp_function.funcId,
+			imp_function.funcName,
+			imp_function.remark,
+			'N' AS enableFlag from imp_function where  1=1
+			<choose>
+	        	<when test="parentId !=null and parentId != ''">
+	             	and parentId=#{parentId}
+	        	</when>
+	       	 	<otherwise>
+	            	and parentId is null
+	        	</otherwise>
+    		</choose>
+			and  imp_function.funcId not in (
+			SELECT
+				imp_function.funcId
+			FROM
+				imp_function
+			LEFT JOIN imp_role_qx ON imp_function.funcId = imp_role_qx.funcId
+			WHERE
+				imp_role_qx.roleId =  #{roleId}
+				<choose>
+		        	<when test="parentId !=null and parentId != ''">
+		             	and parentId=#{parentId}
+		        	</when>
+		       	 	<otherwise>
+		            	and parentId is null
+		        	</otherwise>
+	    		</choose>
+	    	)
+	</select>
+	
+	 
+	
+	<select id="isRecordExist" resultType="java.lang.Integer">
+	    select count(*) from imp_role_qx where roleId=#{roleId} and funcId=#{funcId}
+	</select>
+	
+	
+	<insert id="addRoleQx">
+	    insert into imp_role_qx(id,roleId,funcId,enableFlag) values(#{roleQx.id},#{roleQx.roleId},#{roleQx.funcId},#{roleQx.enableFlag})
+	</insert>
+	
+	
+	<update id="updateRoleQx">
+	    update imp_role_qx set enableflag=#{roleQx.enableFlag} where roleId=#{roleQx.roleId} and funcId=#{roleQx.funcId}
+	</update>
+    
+    
+</mapper>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.ApprovalMapper">
+    
+     <sql id="baseColumnList">
+	     id,applicant,approver,StartTime,EnDofTime,results,proId,planId,Describes,ProcessInstanceId
+	</sql>
+    
+		<insert id="AddApproval">
+		    insert into imp_approval 
+		    	   (<include refid="baseColumnList" />) 
+		    values 
+		    	  (#{approval.id},#{approval.applicant},#{approval.approver},
+		    	 #{approval.StartTime},#{approval.EnDofTime},#{approval.results},
+		    	 #{approval.proId},#{approval.planId},#{approval.Describes},
+		    	 #{approval.ProcessInstanceId})
+		</insert>
+		
+		<select id="getApproval" resultType="Approval">
+		      SELECT * FROM imp_approval
+		    <if test="planId!=null">
+			      where planId = #{planId}
+		    </if>
+		</select>
+		
+		<update id="UpdateApproval">
+		    update imp_approval set 
+		       EnDofTime=#{Ding.finishTime},
+		       results=#{Ding.result},
+		       Describes=#{Ding.remark} 
+		    where ProcessInstanceId=#{processInstanceId} 
+		</update>
+		
+		<update id="Updateplan">
+		    update imp_project_plan set
+		     planStatus = 2
+		    where planId = #{planId}
+		</update>
+		
+		<select id="getApprovalInthe" resultType="Approval">
+		        SELECT ProcessInstanceId,planId FROM imp_approval
+                WHERE imp_approval.results = '审批中'
+		</select>
+		
+		<select id="getUnsatisfactorycondition" resultType="Approval">
+		    SELECT * FROM imp_approval 
+            WHERE imp_approval.ProId = #{ProId}
+            ORDER BY  EnDofTime DESC LIMIT 1		    
+		</select>
+		
+		<select id="getPlanTitle" resultType="ProjectPlanList">
+		    SELECT * FROM  imp_project_plan_list l
+			WHERE l.listType = (
+			SELECT type FROM imp_project_plan_data d
+			WHERE d.planTitle = #{planTitle})
+		</select>
+		
+		<update id="UpdateProjectDate">
+		     UPDATE imp_project_plan_list l SET 
+             l.startDate = #{startDate}, l.endDate = #{endDate}
+             WHERE l.listType= #{type}
+		</update>
+		<update id="UpdateProjectDateNoNull">
+		    UPDATE imp_project_plan_list l SET 
+              l.endDate = #{endDate}
+             WHERE l.listType= #{type}
+		</update>
+		
+		<select id="getProjectPlan" resultMap="rm">
+		    SELECT * FROM imp_project_plan_list l JOIN imp_project_plan_data d
+			ON l.listType = d.type
+			AND l.listType != 3 AND l.listType != 5 AND l.listType != 9 AND l.listType != 11
+		</select>
+		
+		<resultMap type="ProjectPlanList" id="rm">
+  		<id property="planId" column="planId"></id>
+  		<result property="startDate" column="startDate"/>
+  		<result property="endDate" column="endDate"/>
+  		<result property="proId" column="proId"/>
+  		<result property="listType" column="listType"/>
+  		<collection property="ProjectPlan" ofType="ProjectPlanData">
+  			<id property="planTitle" column="planTitle"></id>
+  			<result property="type" column="type"/>
+  		</collection>
+  		
+  	</resultMap>
+</mapper>

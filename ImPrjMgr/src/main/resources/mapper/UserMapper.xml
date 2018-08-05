@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.UserMapper">
+    
+    
+    
+    	<resultMap type="UserInfo" id="userInfo">
+		    <result property="userId" column="userId"/>
+		    <result property="mc" column="mc"/>
+			<result property="userLevel" column="userLevel"/>
+			<result property="enableFlag" column="enableFlag" javaType="Boolean" jdbcType="CHAR"/>
+			<result property="remark" column="remark"/>
+		</resultMap>		
+    	
+    
+    
+    	<insert id="addUserInfo">
+    	  		insert into imp_user(userId,mc,enableFlag,remark) values (#{user.userId},#{user.mc},#{user.enableFlag},#{user.remark})  
+    	</insert>
+    	
+    	
+    	
+    	<delete id="delUserInfo">
+    	    delete from   imp_user where userId=#{userId}
+    	</delete>
+    	
+    	
+    	<update id="updateUserInfo">
+    	    	update imp_user
+    	    	<set>
+    	    	    	<if test="user.mc!=null and user.mc!=''">
+								mc=#{user.mc},
+						</if>
+    	    	    	<if test="user.remark!=null and user.remark!=''">
+								remark=#{remark},
+						</if>
+						<if test="user.enableFlag!=null and user.enableFlag!=''">
+								enableFlag=#{user.enableFlag},
+						</if>
+    	    	</set>
+    	    	where userId=#{user.userId}
+    	</update>
+    	
+    	
+	   	<select id="getUserInfo" resultMap="userInfo">
+    	  		select userId,mc,userLevel,enableFlag from imp_user where userId=#{userId}
+    	</select>
+    	
+	   	
+	   	
+	   	
+	   	<select id="getUserList"  resultMap="userInfo">
+        		SELECT * from imp_user 	where 1=1
+        		<if test="mc!=null and mc!=''">
+							and	mc=#{mc}
+				</if>
+        		<if test="limit gt 0">
+								limit #{limit} offset #{start}
+				</if>
+  		</select>
+  		
+	   	<select id="getUserCount"  resultType="java.lang.Integer">
+        		select count(*) from imp_user where 1=1
+        		<if test="mc!=null and mc!=''">
+							and	mc=#{mc}
+				</if>
+  		</select>
+  		
+	   	<select id="isUserIdExist"  resultType="java.lang.Integer">
+	   	    	select count(*) from imp_user where userId=#{userId}
+	   	</select>
+  
+	   	
+</mapper>

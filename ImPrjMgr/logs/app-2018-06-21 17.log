@@ -1,0 +1,284 @@
+2018-06-21 17:00:15,797 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:00:15,799 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:00:15,800 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:00:16,963 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.208 seconds (JVM running for 3370.588)
+2018-06-21 17:00:38,435 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:00:38,436 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:00:38,436 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:00:39,618 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.229 seconds (JVM running for 3393.244)
+2018-06-21 17:01:07,487 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:01:07,487 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:01:07,487 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:01:08,640 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.194 seconds (JVM running for 3422.266)
+2018-06-21 17:01:30,311 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:01:30,311 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:01:30,311 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:01:31,475 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.206 seconds (JVM running for 3445.101)
+2018-06-21 17:02:54,543 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"error":"Session expired","flag":false}
+2018-06-21 17:03:30,324 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-21 17:03:30,324 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==> Parameters: null
+2018-06-21 17:03:30,325 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] <==      Total: 0
+2018-06-21 17:03:30,326 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-06-21 17:03:43,110 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-21 17:03:43,111 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717  (String)
+2018-06-21 17:03:43,113 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] <==      Total: 1
+2018-06-21 17:03:43,113 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:04:09,071 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-4] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:04:09,073 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-4] ==> Parameters: f9ef9278-478f-455a-9a47-a002f608f6fd(String)
+2018-06-21 17:04:09,074 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-4] <==      Total: 0
+2018-06-21 17:04:09,075 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-4] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:04:09,076 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-4] ==> Parameters: f9ef9278-478f-455a-9a47-a002f608f6fd(String), m-06(String)
+2018-06-21 17:04:09,076 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-4] <==      Total: 0
+2018-06-21 17:04:09,077 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-4] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:04:09,078 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-4] ==> Parameters: f9ef9278-478f-455a-9a47-a002f608f6fd(String)
+2018-06-21 17:04:09,079 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-4] <==    Updates: 0
+2018-06-21 17:04:09,080 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-4] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:04:09,081 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-4] ==> Parameters: 2189ec85-4fe4-4b90-9566-09ef9c940bdf(String), f9ef9278-478f-455a-9a47-a002f608f6fd(String), m-06(String), null
+2018-06-21 17:04:09,110 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-4] <==    Updates: 1
+2018-06-21 17:04:09,110 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:05:23,610 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-5] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:05:23,611 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-5] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:05:23,612 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-5] <==      Total: 1
+2018-06-21 17:05:23,612 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-5] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:05:23,612 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-5] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:05:23,613 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-5] <==      Total: 0
+2018-06-21 17:05:23,620 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-5] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:05:23,620 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-5] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:05:23,641 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-5] <==    Updates: 1
+2018-06-21 17:05:23,641 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-5] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:05:23,643 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-5] ==> Parameters: 74f2fa6e-d74f-4532-adfc-bc707179022d(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:05:23,666 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-5] <==    Updates: 1
+2018-06-21 17:05:23,667 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:06:21,647 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-6] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:06:21,647 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-6] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:06:21,648 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-6] <==      Total: 1
+2018-06-21 17:06:21,649 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-6] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:06:21,649 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-6] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:06:21,651 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-6] <==      Total: 1
+2018-06-21 17:06:21,652 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-6] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:06:21,654 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-6] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:06:21,656 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-6] <==      Total: 0
+2018-06-21 17:06:21,656 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-6] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:06:21,656 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-6] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:06:21,690 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-6] <==    Updates: 1
+2018-06-21 17:06:21,691 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-6] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:06:21,691 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-6] ==> Parameters: ce31d70b-6fdf-4a3a-8630-85a7264003d2(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:06:21,715 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-6] <==    Updates: 1
+2018-06-21 17:06:21,716 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-6] 序列化后的JSON资料输出:
+{"errmsg":"Index: 1, Size: 1","flag":false}
+2018-06-21 17:07:51,620 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-7] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:07:51,624 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-7] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:07:51,628 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-7] <==      Total: 1
+2018-06-21 17:09:43,692 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-7] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:09:43,694 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-7] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:09:43,706 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-7] <==      Total: 1
+2018-06-21 17:10:45,744 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-7] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:10:45,747 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-7] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:10:45,749 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-7] <==      Total: 0
+2018-06-21 17:11:28,539 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-7] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:11:28,541 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-7] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:11:28,571 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-7] <==    Updates: 1
+2018-06-21 17:13:17,648 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-7] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:13:17,658 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-7] ==> Parameters: 3e08c955-f956-46be-a0d7-ab1ec10480e3(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:13:17,695 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-7] <==    Updates: 1
+2018-06-21 17:13:42,461 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-7] 序列化后的JSON资料输出:
+{"errmsg":"Index: 1, Size: 1","flag":false}
+2018-06-21 17:16:16,216 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-8] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:16:16,219 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-8] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:16:16,225 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-8] <==      Total: 1
+2018-06-21 17:16:22,812 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-8] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:16:22,815 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-8] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:16:22,819 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-8] <==      Total: 1
+2018-06-21 17:17:26,568 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-8] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:17:26,571 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-8] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:17:26,575 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-8] <==      Total: 0
+2018-06-21 17:18:01,859 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-8] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:18:01,860 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-8] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:18:01,920 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-8] <==    Updates: 1
+2018-06-21 17:22:26,794 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-8] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:22:26,800 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-8] ==> Parameters: 40a87405-8bd6-4230-ba10-a1b87b036064(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:22:26,823 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-8] <==    Updates: 1
+2018-06-21 17:23:37,796 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-8] 序列化后的JSON资料输出:
+{"errmsg":"Index: 1, Size: 1","flag":false}
+2018-06-21 17:24:18,061 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-9] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:24:18,062 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-9] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:24:18,064 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-9] <==      Total: 1
+2018-06-21 17:24:20,157 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-9] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:24:20,158 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-9] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:24:20,159 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-9] <==      Total: 1
+2018-06-21 17:24:20,160 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-9] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:24:20,160 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-9] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:24:20,161 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-9] <==      Total: 0
+2018-06-21 17:24:20,162 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-9] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:24:20,162 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-9] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:24:20,198 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-9] <==    Updates: 1
+2018-06-21 17:24:20,198 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-9] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:24:20,199 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-9] ==> Parameters: e888e09b-5890-4ba8-af2a-82e0d28d037b(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:24:20,224 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-9] <==    Updates: 1
+2018-06-21 17:24:20,224 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-9] 序列化后的JSON资料输出:
+{"errmsg":"Index: 1, Size: 1","flag":false}
+2018-06-21 17:24:32,743 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-10] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:24:32,744 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-10] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:24:32,745 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-10] <==      Total: 1
+2018-06-21 17:24:39,244 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-10] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:24:39,246 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-10] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:24:39,250 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-10] <==      Total: 1
+2018-06-21 17:24:49,876 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-10] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:24:49,878 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-10] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:24:49,881 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-10] <==      Total: 0
+2018-06-21 17:24:53,096 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-10] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:24:53,098 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-10] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:24:53,135 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-10] <==    Updates: 1
+2018-06-21 17:25:09,280 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-10] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:25:09,285 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-10] ==> Parameters: d3ac927e-2872-4a13-89dc-ad612aafd888(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:25:09,316 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-10] <==    Updates: 1
+2018-06-21 17:26:37,708 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-10] 序列化后的JSON资料输出:
+{"errmsg":"Index: 1, Size: 1","flag":false}
+2018-06-21 17:26:38,113 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:26:38,113 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:26:38,113 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:26:40,091 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.042 seconds (JVM running for 4953.717)
+2018-06-21 17:26:57,130 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:26:57,131 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:26:57,133 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 17:27:00,907 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:27:00,911 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:27:00,915 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 17:27:03,097 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:27:03,099 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:27:03,102 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] <==      Total: 0
+2018-06-21 17:27:05,215 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-1] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:27:05,216 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:27:05,249 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-1] <==    Updates: 1
+2018-06-21 17:27:08,891 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:27:08,897 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] ==> Parameters: 76950cac-5f01-4431-b9c1-a66293690b89(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:27:08,924 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] <==    Updates: 1
+2018-06-21 17:33:48,959 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"errmsg":"Index: 1, Size: 1","flag":false}
+2018-06-21 17:33:50,145 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:33:50,145 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:33:50,145 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:33:51,947 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.861 seconds (JVM running for 5385.572)
+2018-06-21 17:34:03,030 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:34:03,030 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:34:03,031 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 17:34:08,697 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:34:08,699 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:34:08,704 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 17:34:11,169 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:34:11,172 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String)
+2018-06-21 17:34:11,176 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-1] <==      Total: 0
+2018-06-21 17:34:17,890 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-1] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:34:17,893 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:34:17,944 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-1] <==    Updates: 1
+2018-06-21 17:36:20,434 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:36:20,440 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] ==> Parameters: 3f6bc369-bcaa-4aca-b560-55f0a5df31a3(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:36:20,476 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] <==    Updates: 1
+2018-06-21 17:36:32,233 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:36:32,241 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] ==> Parameters: 0313f5c7-cd8c-48e0-b0de-f975fd93dd26(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05-01(String), null
+2018-06-21 17:36:32,282 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-1] <==    Updates: 1
+2018-06-21 17:36:39,430 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:38:54,295 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:38:54,296 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-2] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:38:54,297 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-2] <==      Total: 2
+2018-06-21 17:38:54,733 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:38:54,734 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-2] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:38:54,735 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-2] <==      Total: 1
+2018-06-21 17:38:54,736 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:38:54,736 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-2] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05(String)
+2018-06-21 17:38:54,737 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-2] <==      Total: 0
+2018-06-21 17:38:54,739 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-2] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:38:54,740 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-2] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:38:54,769 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-2] <==    Updates: 2
+2018-06-21 17:38:54,770 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-2] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:38:54,770 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-2] ==> Parameters: f8bf0276-8080-4cf0-9db5-e9581b335027(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:38:54,794 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-2] <==    Updates: 1
+2018-06-21 17:38:54,795 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-2] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:38:54,795 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-2] ==> Parameters: 26142761-a662-4c17-a810-554242210987(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-05(String), null
+2018-06-21 17:38:54,823 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-2] <==    Updates: 1
+2018-06-21 17:38:54,823 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:39:19,349 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-3] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:39:19,351 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-3] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:39:19,352 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-3] <==      Total: 2
+2018-06-21 17:39:19,897 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-3] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? AND imp_role_qx.functionId = ? 
+2018-06-21 17:39:19,898 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-3] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String)
+2018-06-21 17:39:19,899 DEBUG c.b.m.c.I.TheLatest [http-nio-8080-exec-3] <==      Total: 1
+2018-06-21 17:39:19,899 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-3] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:39:19,900 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-3] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:39:19,945 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-3] <==    Updates: 2
+2018-06-21 17:39:19,946 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-3] ==>  Preparing: insert into imp_role_qx (id, roleid, functionid,remark) values (?, ?, ?,?) 
+2018-06-21 17:39:19,946 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-3] ==> Parameters: 7ec84328-88c8-4761-a326-629d5c1b3dae(String), 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String), m-06(String), null
+2018-06-21 17:39:19,965 DEBUG c.b.m.c.I.roleDistributionfunction [http-nio-8080-exec-3] <==    Updates: 1
+2018-06-21 17:39:19,966 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:39:33,711 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-4] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:39:33,713 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-4] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:39:33,714 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-4] <==      Total: 1
+2018-06-21 17:39:34,391 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-4] ==>  Preparing: DELETE FROM imp_role_qx WHERE roleId = ? 
+2018-06-21 17:39:34,391 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-4] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:39:34,431 DEBUG c.b.m.c.I.roleundofunctionAll [http-nio-8080-exec-4] <==    Updates: 1
+2018-06-21 17:39:34,431 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:40:57,870 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"errmsg":"syntax error, pos 11","flag":false}
+2018-06-21 17:41:36,669 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-6] 序列化后的JSON资料输出:
+{"errmsg":"syntax error, pos 11","flag":false}
+2018-06-21 17:45:09,565 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:45:09,565 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:45:09,565 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:45:11,177 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.663 seconds (JVM running for 6064.802)
+2018-06-21 17:45:36,780 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:45:36,781 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:45:36,781 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:45:38,350 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.622 seconds (JVM running for 6091.976)
+2018-06-21 17:47:27,620 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:47:27,621 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:47:27,621 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:47:29,235 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.665 seconds (JVM running for 6202.861)
+2018-06-21 17:48:03,636 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-7] 序列化后的JSON资料输出:
+{"errmsg":"syntax error, pos 11","flag":false}
+2018-06-21 17:48:28,025 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"errmsg":"syntax error, pos 11","flag":false}
+2018-06-21 17:49:26,201 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:49:26,201 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:49:26,201 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:49:31,990 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 5.837 seconds (JVM running for 6325.616)
+2018-06-21 17:49:50,955 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:49:50,956 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:49:50,956 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:49:52,184 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.271 seconds (JVM running for 6345.809)
+2018-06-21 17:50:19,847 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:50:19,848 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:50:19,850 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] <==      Total: 0
+2018-06-21 17:51:44,653 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11604 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:51:44,653 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:51:44,653 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:51:46,325 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.725 seconds (JVM running for 6459.95)
+2018-06-21 17:53:49,727 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 10688 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:53:49,730 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:53:49,731 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:53:55,186 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 5.713 seconds (JVM running for 6.559)
+2018-06-21 17:54:48,964 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-21 17:54:48,983 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-06-21 17:54:48,995 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 17:54:49,052 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 17:56:05,085 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:56:05,087 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-2] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:56:05,089 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-2] <==      Total: 0
+2018-06-21 17:56:56,320 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 10688 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 17:56:56,321 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 17:56:56,321 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 17:56:59,234 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.986 seconds (JVM running for 190.608)
+2018-06-21 17:58:42,016 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"errmsg":"syntax error, pos 11","flag":false}
+2018-06-21 17:58:47,101 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role_qx WHERE imp_role_qx.roleId =? 
+2018-06-21 17:58:47,102 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] ==> Parameters: 80b3fdb8-b903-4b68-b98b-b3f8b328301b(String)
+2018-06-21 17:58:47,104 DEBUG c.b.m.c.I.TheOriginal [http-nio-8080-exec-1] <==      Total: 0

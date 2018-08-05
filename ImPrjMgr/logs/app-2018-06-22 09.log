@@ -1,0 +1,29 @@
+2018-06-22 09:13:22,062 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 6464 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-22 09:13:22,075 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-22 09:13:22,076 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-22 09:13:29,245 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 7.433 seconds (JVM running for 8.395)
+2018-06-22 09:14:11,494 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-22 09:14:11,522 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: null
+2018-06-22 09:14:11,533 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 0
+2018-06-22 09:14:11,647 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-06-22 09:15:10,681 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 6464 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-22 09:15:10,682 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-22 09:15:10,683 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-22 09:15:12,597 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.976 seconds (JVM running for 111.748)
+2018-06-22 09:15:18,466 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 6464 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-22 09:15:18,467 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-22 09:15:18,467 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-22 09:15:20,293 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.874 seconds (JVM running for 119.443)
+2018-06-22 09:16:15,592 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 6464 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-22 09:16:15,592 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-22 09:16:15,592 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-22 09:16:18,233 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.738 seconds (JVM running for 177.384)
+2018-06-22 09:16:42,319 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-22 09:17:38,098 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-22 09:17:39,353 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-22 09:19:13,645 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"error":"Session expired","flag":false}

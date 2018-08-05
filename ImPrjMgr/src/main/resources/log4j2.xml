@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<properties>
+		<!-- 文件输出格式 -->
+		<property name="PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} |-%-5level [%thread] %c [%L] -| %msg%n</property>
+	</properties>
+
+	<appenders>
+	    <!--添加一个控制台追加器-->
+		<Console name="CONSOLE" target="system_out">
+			<PatternLayout pattern="${PATTERN}" />
+		</Console>
+		<!--添加一个文本追加器，文件位于根目录下，名为log.log-->
+        <File name="FILE" fileName="log.log">
+           <PatternLayout pattern="${PATTERN}" />
+        </File>
+        
+         <RollingFile name="RollingFile" fileName="logs/log.log"
+                 filePattern="logs/app-%d{yyyy-MM-dd HH}.log">
+		      <PatternLayout>
+		        <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+		      </PatternLayout>
+		      <Policies>
+		        <TimeBasedTriggeringPolicy interval="1"/>
+		        <SizeBasedTriggeringPolicy size="10MB"/>
+		      </Policies>
+		</RollingFile>
+	</appenders>
+	
+	<loggers>
+		<logger name="cn.bizowner" level="debug" >
+		    	<appenderref ref="RollingFile" />
+		</logger>    
+		<root level="info">
+			<appenderref ref="CONSOLE" />
+		</root>
+	</loggers>
+
+</configuration>

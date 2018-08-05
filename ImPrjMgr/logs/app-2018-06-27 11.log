@@ -1,0 +1,9 @@
+2018-06-27 11:48:54,157 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8800 (started by liujie in F:\svn\对账系统\代码\ImPrjMgr)
+2018-06-27 11:48:54,198 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-27 11:48:54,198 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-27 11:49:06,879 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 13.361 seconds (JVM running for 24.607)
+2018-06-27 11:51:03,170 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-27 11:51:03,200 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: 4f218846-5637-41b2-b988-e18a06fb1242(String)
+2018-06-27 11:51:03,219 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 1
+2018-06-27 11:51:03,476 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}

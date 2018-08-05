@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.CheckIndexMapper">
+    
+    	 
+    	<resultMap type="CheckIndex" id="checkIndex">
+		    <result property="id" column="id"/>
+			<result property="name" column="name"/>
+			<result property="indexName" column="indexName"/>
+			<result property="indexValue" column="indexValue"/>
+		</resultMap>
+    	
+    
+    
+		<select id="getList"  resultMap="checkIndex">
+					select id,name,indexName,indexValue from imp_check_index
+		</select>
+		
+		
+		
+		<select id="getInfoById"  resultMap="checkIndex">
+					select id,name,indexName,indexValue from imp_check_index where id=#{id}
+		</select>
+		
+		
+		
+		<insert id="addCheckIndex">
+		    	insert imp_check_index(id,name,indexName,indexValue) values 
+		    	(#{checkIndex.id},#{checkIndex.name},#{checkIndex.indexName},#{checkIndex.indexValue})
+		</insert>
+		
+		
+		<update id="updateCheckIndex">
+		    	update  imp_check_index
+		    	<set>
+		    	   		 <if test="checkIndex.name!=null and checkIndex.name!=''">
+								name=#{checkIndex.name},
+						</if>
+    	    	    	<if test="checkIndex.indexName!=null and checkIndex.indexName!=''">
+								indexName=#{checkIndex.indexName},
+						</if>
+						<if test="checkIndex.indexValue!=null and checkIndex.indexValue!=''">
+								indexValue=#{checkIndex.indexValue}
+						</if>
+		    	</set>
+		    	where id=#{checkIndex.id}
+		</update>
+		
+		
+		
+		<delete id="delCheckIndex">
+					delete from imp_check_index where id=#{id}
+		</delete>
+		
+		
+</mapper>

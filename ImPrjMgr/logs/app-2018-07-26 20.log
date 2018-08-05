@@ -1,0 +1,22 @@
+2018-07-26 08:41:11,191 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 12020 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-07-26 08:41:11,204 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-07-26 08:41:11,205 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-07-26 08:41:18,410 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 7.511 seconds (JVM running for 8.55)
+2018-07-26 08:41:31,853 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer, proStatus,money,finishTime,proNo from imp_project where proId=? 
+2018-07-26 08:41:31,871 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-26 08:41:31,882 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 1
+2018-07-26 08:41:31,967 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-07-26 08:42:06,525 DEBUG c.b.m.W.getProject [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_project WHERE proId = ? 
+2018-07-26 08:42:06,526 DEBUG c.b.m.W.getProject [http-nio-8080-exec-2] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-26 08:42:06,528 DEBUG c.b.m.W.getProject [http-nio-8080-exec-2] <==      Total: 1
+2018-07-26 08:42:06,530 DEBUG c.b.m.W.getProjectPlanList [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_project_plan_list WHERE listType = 4 AND proId = ? 
+2018-07-26 08:42:06,531 DEBUG c.b.m.W.getProjectPlanList [http-nio-8080-exec-2] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-26 08:42:06,533 DEBUG c.b.m.W.getProjectPlanList [http-nio-8080-exec-2] <==      Total: 1
+2018-07-26 08:42:06,536 DEBUG c.b.m.W.getPlanListZS [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_project_plan_list WHERE listType = 5 AND proId = ? 
+2018-07-26 08:42:06,536 DEBUG c.b.m.W.getPlanListZS [http-nio-8080-exec-2] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-26 08:42:06,538 DEBUG c.b.m.W.getPlanListZS [http-nio-8080-exec-2] <==      Total: 1
+2018-07-26 08:58:10,053 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 12020 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-07-26 08:58:10,055 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-07-26 08:58:10,055 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-07-26 08:58:12,871 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.871 seconds (JVM running for 1020.087)

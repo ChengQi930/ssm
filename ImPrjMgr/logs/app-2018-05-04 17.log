@@ -1,0 +1,4 @@
+2018-05-04 17:59:12,876 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 9664 (E:\Home\20180416_springboot\springBootDemo\target\classes started by liujie in E:\Home\20180416_springboot\springBootDemo)
+2018-05-04 17:59:12,941 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-04 17:59:12,942 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-04 17:59:16,276 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 3.672 seconds (JVM running for 4.599)

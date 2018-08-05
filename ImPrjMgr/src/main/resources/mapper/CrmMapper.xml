@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.CrmMapper">
+    
+    
+    
+    	<resultMap type="CrmInfo" id="crmInfo">
+		    <result property="userId" column="userId"/>
+			<result property="crmUserName" column="crmUserName"/>
+			<result property="crmUserKey" column="crmUserKey"/>
+		</resultMap>		
+    	
+    
+    
+    	<insert id="addCrmInfo">
+    	  		insert into imp_crm(userId,crmUserName,crmUserKey) values (#{crmInfo.userId},#{crmInfo.crmUserName},#{crmInfo.crmUserKey})  
+    	</insert>
+    	
+    	
+    	
+    	<delete id="delCrmInfo">
+    	    delete from   imp_crm where userId=#{userId}
+    	</delete>
+    	
+    	
+	   	<select id="getCrmInfo" resultMap="crmInfo">
+    			select userId,crmUserName,crmUserKey from imp_crm where  userId=#{userId}
+    	</select>
+</mapper>

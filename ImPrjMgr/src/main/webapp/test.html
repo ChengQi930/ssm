@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>json交互测试</title>
+<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript">
+//请求json，输出是json
+function requestJson(){
+	
+	$.ajax({
+		type:'post',
+		url:'http://127.0.0.1:8080/Test/GetUserInfo',
+		contentType:'application/x-www-form-urlencoded;charset=UTF-8',
+		//数据格式是json串，商品信息
+		//data:'{"name":"刘杰","price":"999"}',
+		data:'name=刘杰&price=999',
+		success:function(data){//返回json结果
+			//var obj = jQuery.parseJSON(data);  
+			//alert(obj.name);
+			//alert(obj.price);
+			alert(1);
+			var n1 = document.getElementById("content");
+			n1.value=data;
+			
+		}
+	});
+}
+</script>
+</head>
+<body>
+<input type="button"   value="获得登陆用户信息" onclick="requestJson()"/>
+<input type="text"  id="content" value=""/>
+</body>
+</html>

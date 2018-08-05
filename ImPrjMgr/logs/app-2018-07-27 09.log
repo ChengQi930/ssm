@@ -1,0 +1,78 @@
+2018-07-27 09:32:20,168 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 7008 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-07-27 09:32:20,198 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-07-27 09:32:20,198 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-07-27 09:32:27,046 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 7.185 seconds (JVM running for 8.713)
+2018-07-27 09:32:52,132 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:32:52,151 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:32:52,159 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 0
+2018-07-27 09:32:52,258 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:33:44,254 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:33:44,257 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:33:44,258 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] <==      Total: 0
+2018-07-27 09:33:44,259 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:34:02,687 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:34:02,689 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:34:02,694 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] <==      Total: 0
+2018-07-27 09:34:15,203 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:34:31,751 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-4] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:34:31,753 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-4] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:34:31,759 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-4] <==      Total: 0
+2018-07-27 09:34:36,290 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:34:47,924 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-5] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:34:47,927 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-5] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:34:47,930 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-5] <==      Total: 0
+2018-07-27 09:35:07,067 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:35:07,487 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 7008 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-07-27 09:35:07,489 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-07-27 09:35:07,490 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-07-27 09:35:09,717 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.326 seconds (JVM running for 171.383)
+2018-07-27 09:35:13,238 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:35:13,240 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:35:13,242 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 0
+2018-07-27 09:35:15,543 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-07-27 09:36:21,714 DEBUG c.b.m.F.getPhase [http-nio-8080-exec-2] ==>  Preparing: SELECT *,COUNT(pd.type) as phaseAmount FROM imp_project_plan_list as pl JOIN imp_project_plan_data pd ON (startDate <= '2018-05' AND endDate <='2018-6' OR startDate >= '2018-05' AND endDate >= '2018-06' OR startDate <= '2018-05' AND endDate >= '2018-06') WHERE pl.listType = pd.type GROUP BY pl.listType 
+2018-07-27 09:36:21,716 DEBUG c.b.m.F.getPhase [http-nio-8080-exec-2] ==> Parameters: 
+2018-07-27 09:36:21,754 DEBUG c.b.m.F.getPhase [http-nio-8080-exec-2] <==      Total: 5
+2018-07-27 09:36:23,472 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"name":"导帐并获取信息","value":"1"},{"name":"翻票据","value":"1"},{"name":"实物盘点","value":"1"},{"name":"帐实核对","value":"2"},{"name":"处理问题","value":"1"}]}
+2018-07-27 09:38:15,011 DEBUG c.b.m.F.getPhase [http-nio-8080-exec-3] ==>  Preparing: SELECT *,COUNT(pd.type) as phaseAmount FROM imp_project_plan_list as pl JOIN imp_project_plan_data pd ON (startDate <= '2018-05' AND endDate <='2018-6' OR startDate >= '2018-05' AND endDate >= '2018-06' OR startDate <= '2018-05' AND endDate >= '2018-06') WHERE pl.listType = pd.type GROUP BY pl.listType 
+2018-07-27 09:38:15,012 DEBUG c.b.m.F.getPhase [http-nio-8080-exec-3] ==> Parameters: 
+2018-07-27 09:38:15,017 DEBUG c.b.m.F.getPhase [http-nio-8080-exec-3] <==      Total: 5
+2018-07-27 09:38:15,018 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"name":"导帐并获取信息","value":"1"},{"name":"翻票据","value":"1"},{"name":"实物盘点","value":"1"},{"name":"帐实核对","value":"2"},{"name":"处理问题","value":"1"}]}
+2018-07-27 09:39:35,187 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:39:45,068 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-5] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo from imp_project where proId=? 
+2018-07-27 09:39:45,069 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-5] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-07-27 09:39:45,072 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-5] <==      Total: 0
+2018-07-27 09:39:45,076 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"flag":true}
+2018-07-27 09:40:03,914 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-6] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:40:50,250 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-7] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-07-27 09:40:55,128 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==>  Preparing: SELECT SUM(money) FROM imp_project as p WHERE (p.createTime <= ? AND p.estTime <= ? OR p.createTime >= ? AND p.estTime >= ? OR p.createTime <= ? AND p.estTime >= ?) AND p.proStatus = 2 
+2018-07-27 09:40:55,129 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==> Parameters: 2018-05-01(String), 2018-05-31(String), 2018-05-01(String), 2018-05-31(String), 2018-05-01(String), 2018-05-31(String)
+2018-07-27 09:40:55,144 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] <==      Total: 1
+2018-07-27 09:40:55,145 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==>  Preparing: SELECT SUM(money) FROM imp_project as p WHERE (p.createTime <= ? AND p.estTime <= ? OR p.createTime >= ? AND p.estTime >= ? OR p.createTime <= ? AND p.estTime >= ?) AND p.proStatus = 2 
+2018-07-27 09:40:55,146 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==> Parameters: 2018-06-01(String), 2018-06-30(String), 2018-06-01(String), 2018-06-30(String), 2018-06-01(String), 2018-06-30(String)
+2018-07-27 09:40:55,147 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] <==      Total: 1
+2018-07-27 09:40:55,148 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==>  Preparing: SELECT SUM(money) FROM imp_project as p WHERE (p.createTime <= ? AND p.estTime <= ? OR p.createTime >= ? AND p.estTime >= ? OR p.createTime <= ? AND p.estTime >= ?) AND p.proStatus = 2 
+2018-07-27 09:40:55,149 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==> Parameters: 2018-07-01(String), 2018-07-31(String), 2018-07-01(String), 2018-07-31(String), 2018-07-01(String), 2018-07-31(String)
+2018-07-27 09:40:55,150 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] <==      Total: 1
+2018-07-27 09:40:55,150 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==>  Preparing: SELECT SUM(money) FROM imp_project as p WHERE (p.createTime <= ? AND p.estTime <= ? OR p.createTime >= ? AND p.estTime >= ? OR p.createTime <= ? AND p.estTime >= ?) AND p.proStatus = 2 
+2018-07-27 09:40:55,151 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==> Parameters: 2018-08-01(String), 2018-08-31(String), 2018-08-01(String), 2018-08-31(String), 2018-08-01(String), 2018-08-31(String)
+2018-07-27 09:40:55,152 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] <==      Total: 1
+2018-07-27 09:40:55,152 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==>  Preparing: SELECT SUM(money) FROM imp_project as p WHERE (p.createTime <= ? AND p.estTime <= ? OR p.createTime >= ? AND p.estTime >= ? OR p.createTime <= ? AND p.estTime >= ?) AND p.proStatus = 2 
+2018-07-27 09:40:55,154 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] ==> Parameters: 2018-09-01(String), 2018-09-30(String), 2018-09-01(String), 2018-09-30(String), 2018-09-01(String), 2018-09-30(String)
+2018-07-27 09:40:55,155 DEBUG c.b.m.F.getColumnarMoney [http-nio-8080-exec-8] <==      Total: 1
+2018-07-27 09:40:55,156 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-8] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"month":"05","money":null},{"month":"06","money":null},{"month":"07","money":null},{"month":"08","money":null},{"month":"09","money":null}]}
+2018-07-27 09:58:43,321 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-9] 序列化后的JSON资料输出:
+{"flag":true}

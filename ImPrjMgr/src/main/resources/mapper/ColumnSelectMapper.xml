@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.ColumnSelectMapper">
+    
+    
+		<select id="getHeadInfo" resultType="cn.bizowner.dto.impl.BaseDto"> 
+				select * from 
+				(SELECT a.fieldName,b.columnName,'true' AS flag FROM imp_column_select AS a LEFT JOIN imp_column_name AS b ON a.fieldName = b.fieldName
+				WHERE userid = #{userId} AND a.type = #{type} and b.type=#{type} ORDER BY a.fieldOrder asc)t1
+				UNION ALL
+				select *from (
+				(SELECT fieldName,columnName,'false' AS flag FROM imp_column_name WHERE fieldName NOT IN (
+				SELECT fieldName FROM imp_column_select WHERE userid = #{userId} AND type = #{type} ) and type=#{type}))t2
+		</select>
+		
+		
+		
+		<delete id="deleteColumnSelect">
+		    		delete from imp_column_select where userId=#{userId} and type=#{type}
+		</delete>
+		
+		
+		<insert id="addColumnSelect">
+		    		insert into imp_column_select(id,userId,type,fieldName,fieldOrder) values (#{columnSelect.id},#{columnSelect.userId},#{columnSelect.type},#{columnSelect.fieldName},#{columnSelect.order})
+		</insert>
+		
+		
+		
+		<select id="isSetColumnSelect" resultType="java.lang.Integer">
+		    		select count(*) from imp_column_select where userId=#{userId} and type=#{type}
+		</select>
+		
+</mapper>

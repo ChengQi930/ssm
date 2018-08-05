@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bizowner.mapper.custom.Imp_FunctionMapperCuston">
+  <!-- 按id查 -->
+    <select id="selectByPrimaryKey" resultType="Imp_Function">
+        SELECT * FROM imp_function f
+        WHERE f.functionId = #{functionid}
+    </select>
+    
+   <!-- 查所有 -->
+     <select id="queryall" resultType="Imp_Function">
+           SELECT * FROM imp_function 
+           WHERE parentId = #{node}
+    </select>
+      
+    
+</mapper>

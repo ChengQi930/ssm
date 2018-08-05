@@ -1,0 +1,20 @@
+2018-05-04 18:10:19,110 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 10596 (E:\Home\20180416_springboot\springBootDemo\target\classes started by liujie in E:\Home\20180416_springboot\springBootDemo)
+2018-05-04 18:10:19,127 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-04 18:10:19,127 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-04 18:10:23,643 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 4.84 seconds (JVM running for 5.88)
+2018-05-04 18:15:23,762 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 10596 (E:\Home\20180416_springboot\springBootDemo\target\classes started by liujie in E:\Home\20180416_springboot\springBootDemo)
+2018-05-04 18:15:23,762 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-04 18:15:23,763 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-04 18:15:25,137 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.452 seconds (JVM running for 307.371)
+2018-05-04 18:15:44,150 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8448 (E:\Home\20180416_springboot\springBootDemo\target\classes started by liujie in E:\Home\20180416_springboot\springBootDemo)
+2018-05-04 18:15:44,155 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-04 18:15:44,155 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-04 18:15:48,661 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 4.824 seconds (JVM running for 5.842)
+2018-05-04 18:16:30,181 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 6640 (E:\Home\20180416_springboot\springBootDemo\target\classes started by liujie in E:\Home\20180416_springboot\springBootDemo)
+2018-05-04 18:16:30,186 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-04 18:16:30,186 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-04 18:16:34,886 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 5.021 seconds (JVM running for 6.108)
+2018-05-04 18:21:49,220 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 10028 (E:\Home\20180416_springboot\springBootDemo\target\classes started by liujie in E:\Home\20180416_springboot\springBootDemo)
+2018-05-04 18:21:49,224 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-04 18:21:49,225 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-04 18:21:53,857 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 4.947 seconds (JVM running for 5.968)

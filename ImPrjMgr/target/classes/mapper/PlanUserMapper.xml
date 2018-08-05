@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.PlanUserMapper">
+    
+    
+    <sql id="baseColumnList">
+			id,planId,userId	
+	</sql>
+    
+    
+    <select id="isInPlan" resultType="java.lang.String">
+				select id from imp_project_plan_user where planId=(select planId from imp_project_plan where projectId=#{projectId} and type=#{type})
+	</select>
+	
+    
+    <select id="isHavePerm" resultType="java.lang.Integer">
+        		select count(*) from imp_project_plan_user where userId=#{userId} and planId=(select planId from imp_project_plan where proId=#{proId} and type=#{type} and planStatus!=4 order by startDate desc limit 1)
+    </select>
+    
+    
+	
+    
+    <insert id="addPlanUser" >
+				insert into imp_project_plan_user(<include refid="baseColumnList" />) values 
+				(#{planUser.id},#{planUser.planId},#{planUser.userId});
+	</insert>
+	
+    
+     <delete id="delPlanUser" >
+				delete from imp_project_plan_user where planId=#{planId}
+	</delete>
+    
+    
+     <select id="getUserIdInfoByPlanId" resultType="cn.bizowner.dto.impl.BaseDto">
+         		select userId,(select mc from imp_user where imp_user.userId=imp_project_plan_user.userId) as mc from imp_project_plan_user where planId=#{planId}
+     </select>
+     
+     
+</mapper>

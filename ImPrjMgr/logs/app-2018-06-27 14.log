@@ -1,0 +1,73 @@
+2018-06-27 14:06:50,677 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"error":"Session expired","flag":false}
+2018-06-27 14:06:55,714 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-27 14:06:55,715 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] ==> Parameters: 4f218846-5637-41b2-b988-e18a06fb1242(String)
+2018-06-27 14:06:55,734 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-3] <==      Total: 1
+2018-06-27 14:06:55,735 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-27 14:06:58,953 DEBUG c.b.m.R.getFunctionListByParentId [http-nio-8080-exec-4] ==>  Preparing: select funcId,funcName,remark,parentId from imp_function where 1=1 and parentid is null 
+2018-06-27 14:06:58,954 DEBUG c.b.m.R.getFunctionListByParentId [http-nio-8080-exec-4] ==> Parameters: 
+2018-06-27 14:06:58,956 DEBUG c.b.m.R.getFunctionListByParentId [http-nio-8080-exec-4] <==      Total: 6
+2018-06-27 14:06:58,957 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:06:58,958 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-01(String)
+2018-06-27 14:06:58,959 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] <==      Total: 1
+2018-06-27 14:06:58,960 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:06:58,960 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-02(String)
+2018-06-27 14:06:58,967 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] <==      Total: 1
+2018-06-27 14:06:58,968 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:06:58,969 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-03(String)
+2018-06-27 14:06:58,970 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] <==      Total: 1
+2018-06-27 14:06:58,971 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:06:58,972 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-04(String)
+2018-06-27 14:06:58,973 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] <==      Total: 1
+2018-06-27 14:06:58,973 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:06:58,974 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-05(String)
+2018-06-27 14:06:58,975 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] <==      Total: 1
+2018-06-27 14:06:58,975 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:06:58,976 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-06(String)
+2018-06-27 14:06:58,977 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-4] <==      Total: 1
+2018-06-27 14:06:59,146 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"enableFlag":true,"funcId":"m-01","funcName":"项目信息","parentId":null,"remark":""},{"enableFlag":false,"funcId":"m-02","funcName":"台账管理","parentId":null,"remark":""},{"enableFlag":false,"funcId":"m-03","funcName":"实物清查","parentId":null,"remark":null},{"enableFlag":false,"funcId":"m-04","funcName":"对账管理","parentId":null,"remark":null},{"enableFlag":false,"funcId":"m-05","funcName":"结果统计","parentId":null,"remark":null},{"enableFlag":false,"funcId":"m-06","funcName":"系统管理","parentId":null,"remark":null}]}
+2018-06-27 14:07:41,086 DEBUG c.b.m.R.getFunctionListByParentId [http-nio-8080-exec-5] ==>  Preparing: select funcId,funcName,remark,parentId from imp_function where 1=1 and parentid=? 
+2018-06-27 14:07:41,087 DEBUG c.b.m.R.getFunctionListByParentId [http-nio-8080-exec-5] ==> Parameters: m-01(String)
+2018-06-27 14:07:41,093 DEBUG c.b.m.R.getFunctionListByParentId [http-nio-8080-exec-5] <==      Total: 2
+2018-06-27 14:07:41,094 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-5] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:07:41,095 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-5] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-01-01(String)
+2018-06-27 14:07:41,096 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-5] <==      Total: 1
+2018-06-27 14:07:41,096 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-5] ==>  Preparing: select count(*) from imp_role_qx where roleId=? and funcId=? 
+2018-06-27 14:07:41,097 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-5] ==> Parameters: 3c5d4b5c-4428-4c82-b714-6ead8b846d95(String), m-01-02(String)
+2018-06-27 14:07:41,097 DEBUG c.b.m.R.isRecordExist [http-nio-8080-exec-5] <==      Total: 1
+2018-06-27 14:07:41,098 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"enableFlag":true,"funcId":"m-01-01","funcName":"项目信息维护","parentId":"m-01","remark":""},{"enableFlag":false,"funcId":"m-01-02","funcName":"项目计划维护","parentId":"m-01","remark":""}]}
+2018-06-27 14:08:24,297 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-6] ==>  Preparing: select * from imp_role r left join imp_user_role ur on r.roleId=ur.roleId where ur.userId=? 
+2018-06-27 14:08:24,298 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-6] ==> Parameters: 0951370504677976(String)
+2018-06-27 14:08:24,300 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-6] <==      Total: 1
+2018-06-27 14:08:24,303 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-6] ==>  Preparing: select imp_function.funcId,imp_function.funcName,imp_function.remark,imp_role_qx.enableFlag from imp_function left join imp_role_qx on imp_function.funcId=imp_role_qx.funcId where imp_role_qx.roleId=? and imp_role_qx.enableFlag=? and parentId is null 
+2018-06-27 14:08:24,304 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-6] ==> Parameters: 72e8fb1d-b760-4d9e-818d-270514519c71(String), Y(String)
+2018-06-27 14:08:24,306 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-6] <==      Total: 0
+2018-06-27 14:08:24,307 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-6] 序列化后的JSON资料输出:
+{"flag":true,"result":[]}
+2018-06-27 14:09:31,320 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-7] ==>  Preparing: select * from imp_role r left join imp_user_role ur on r.roleId=ur.roleId where ur.userId=? 
+2018-06-27 14:09:31,321 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-7] ==> Parameters: 0951370504677976(String)
+2018-06-27 14:09:31,324 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-7] <==      Total: 1
+2018-06-27 14:09:41,103 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-7] ==>  Preparing: select imp_function.funcId,imp_function.funcName,imp_function.remark,imp_role_qx.enableFlag from imp_function left join imp_role_qx on imp_function.funcId=imp_role_qx.funcId where imp_role_qx.roleId=? and imp_role_qx.enableFlag=? and parentId is null 
+2018-06-27 14:09:41,108 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-7] ==> Parameters: 72e8fb1d-b760-4d9e-818d-270514519c71(String), Y(String)
+2018-06-27 14:09:41,112 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-7] <==      Total: 0
+2018-06-27 14:09:41,114 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-7] 序列化后的JSON资料输出:
+{"flag":true,"result":[]}
+2018-06-27 14:10:33,287 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-8] ==>  Preparing: select * from imp_role r left join imp_user_role ur on r.roleId=ur.roleId where ur.userId=? 
+2018-06-27 14:10:33,289 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-8] ==> Parameters: 0951370504677976(String)
+2018-06-27 14:10:33,292 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-8] <==      Total: 1
+2018-06-27 14:10:33,686 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-8] ==>  Preparing: select imp_function.funcId,imp_function.funcName,imp_function.remark,imp_role_qx.enableFlag from imp_function left join imp_role_qx on imp_function.funcId=imp_role_qx.funcId where imp_role_qx.roleId=? and imp_role_qx.enableFlag=? and parentId is null 
+2018-06-27 14:10:33,686 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-8] ==> Parameters: 72e8fb1d-b760-4d9e-818d-270514519c71(String), Y(String)
+2018-06-27 14:10:33,690 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-8] <==      Total: 0
+2018-06-27 14:10:33,691 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-8] 序列化后的JSON资料输出:
+{"flag":true,"result":[]}
+2018-06-27 14:11:56,022 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-9] ==>  Preparing: select * from imp_role r left join imp_user_role ur on r.roleId=ur.roleId where ur.userId=? 
+2018-06-27 14:11:56,023 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-9] ==> Parameters: 0951370504677976(String)
+2018-06-27 14:11:56,025 DEBUG c.b.m.R.getRoleInfoByUserId [http-nio-8080-exec-9] <==      Total: 1
+2018-06-27 14:11:56,622 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-9] ==>  Preparing: select imp_function.funcId,imp_function.funcName,imp_function.remark,imp_role_qx.enableFlag from imp_function left join imp_role_qx on imp_function.funcId=imp_role_qx.funcId where imp_role_qx.roleId=? and imp_role_qx.enableFlag=? and parentId is null 
+2018-06-27 14:11:56,623 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-9] ==> Parameters: 72e8fb1d-b760-4d9e-818d-270514519c71(String), Y(String)
+2018-06-27 14:11:56,625 DEBUG c.b.m.R.getRoleQxList [http-nio-8080-exec-9] <==      Total: 1
+2018-06-27 14:11:56,626 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-9] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"enableFlag":true,"funcId":"m-01","funcName":"项目信息","parentId":null,"remark":""}]}

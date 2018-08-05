@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.FanShapeMapper">
+    
+      <select id="getPhase" resultMap="rm">
+        SELECT *,COUNT(pd.type) as phaseAmount FROM imp_project_plan_list as pl JOIN imp_project_plan_data pd
+		ON (startDate &lt;= '2018-05' AND endDate &lt;='2018-6' 
+		OR startDate &gt;= '2018-05' AND endDate &gt;= '2018-06'
+		OR startDate &lt;= '2018-05' AND endDate &gt;= '2018-06')
+		WHERE pl.listType = pd.type
+		GROUP BY pl.listType
+     </select>
+     
+      <resultMap id="rm" type="ProjectPlanList">
+        <id property="planId" column="planId"></id>
+  		<result property="startDate" column="startDate"/>
+  		<result property="endDate" column="endDate"/>
+  		<result property="proId" column="proId"/>
+  		<result property="listType" column="listType"/>
+  		<result property="phaseAmount" column="phaseAmount"/>
+  		<collection property="ProjectPlan" ofType="ProjectPlanData">
+  			<id property="planTitle" column="planTitle"></id>
+  			<result property="type" column="type"/>
+  		</collection>
+      </resultMap>
+    
+      <select id="getColumnarMoney" resultType="java.lang.String">
+           SELECT SUM(money) FROM imp_project as p
+			WHERE (p.createTime &lt;= #{createTime} AND p.estTime &lt;= #{estTime}
+			         OR p.createTime &gt;= #{createTime} AND p.estTime &gt;= #{estTime}
+			         OR p.createTime &lt;= #{createTime} AND p.estTime &gt;= #{estTime}) 
+			AND p.proStatus = 2
+      </select>
+</mapper>

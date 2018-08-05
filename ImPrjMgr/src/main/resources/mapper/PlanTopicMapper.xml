@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.PlanTopicMapper">
+    
+    <select id="getTopicId" resultType="java.lang.String">
+				select topicId from imp_project_plan_topic where planId=(select planId from imp_project_plan where proId=#{proId} and type=#{type} order by startDate desc limit 1)
+	</select>
+	
+    
+    <delete id="delTopicByPlanId">
+        		delete from imp_project_plan_topic where planId=#{planId}
+    </delete>
+	
+</mapper>

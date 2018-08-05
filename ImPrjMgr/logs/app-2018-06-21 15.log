@@ -1,0 +1,197 @@
+2018-06-21 15:03:19,061 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:03:19,075 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:03:19,075 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:03:24,215 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 5.403 seconds (JVM running for 6.336)
+2018-06-21 15:04:17,465 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-21 15:04:17,498 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: f4f8c5b0-b048-4c63-a8a4-6f7f0279d717(String)
+2018-06-21 15:04:17,524 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 15:04:17,609 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true}
+2018-06-21 15:05:07,135 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:05:07,136 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:05:07,136 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:05:09,318 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.262 seconds (JVM running for 111.438)
+2018-06-21 15:05:20,740 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_function WHERE parentId = ? 
+2018-06-21 15:05:20,741 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==> Parameters: 0(String)
+2018-06-21 15:05:20,743 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] <==      Total: 6
+2018-06-21 15:05:20,775 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""},{"funcname":"台账管理","functionid":"m-02","parentid":"0","remark":""},{"funcname":"实物清查","functionid":"m-03","parentid":"0","remark":null},{"funcname":"对账管理","functionid":"m-04","parentid":"0","remark":null},{"funcname":"结果统计","functionid":"m-05","parentid":"0","remark":null},{"funcname":"系统管理","functionid":"m-06","parentid":"0","remark":null}]}
+2018-06-21 15:05:45,397 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_function f WHERE f.functionId = ? 
+2018-06-21 15:05:45,401 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] ==> Parameters: m-01(String)
+2018-06-21 15:05:45,407 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] <==      Total: 1
+2018-06-21 15:05:58,908 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"errmsg":"cn.bizowner.model.Imp_Function cannot be cast to java.util.List","flag":false}
+2018-06-21 15:10:14,075 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:10:14,076 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:10:14,076 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:10:16,188 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.177 seconds (JVM running for 418.309)
+2018-06-21 15:11:26,000 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:11:26,000 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:11:26,001 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:11:27,817 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.871 seconds (JVM running for 489.937)
+2018-06-21 15:11:35,689 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:11:35,689 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:11:35,689 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:11:37,498 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.859 seconds (JVM running for 499.618)
+2018-06-21 15:11:46,400 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:11:46,400 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:11:46,401 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:11:48,869 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.514 seconds (JVM running for 510.99)
+2018-06-21 15:11:54,756 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:11:54,756 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:11:54,757 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:11:56,461 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.75 seconds (JVM running for 518.581)
+2018-06-21 15:12:04,004 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_function f WHERE f.functionId = ? 
+2018-06-21 15:12:04,006 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-1] ==> Parameters: m-01(String)
+2018-06-21 15:12:04,010 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-1] <==      Total: 1
+2018-06-21 15:12:12,209 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""}]}
+2018-06-21 15:13:02,777 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:13:02,777 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:13:02,777 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:13:04,278 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.548 seconds (JVM running for 586.398)
+2018-06-21 15:14:16,014 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_function WHERE parentId = ? 
+2018-06-21 15:14:16,014 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==> Parameters: 0(String)
+2018-06-21 15:14:16,016 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] <==      Total: 6
+2018-06-21 15:14:16,022 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""},{"funcname":"台账管理","functionid":"m-02","parentid":"0","remark":""},{"funcname":"实物清查","functionid":"m-03","parentid":"0","remark":null},{"funcname":"对账管理","functionid":"m-04","parentid":"0","remark":null},{"funcname":"结果统计","functionid":"m-05","parentid":"0","remark":null},{"funcname":"系统管理","functionid":"m-06","parentid":"0","remark":null}]}
+2018-06-21 15:14:32,795 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_function f WHERE f.functionId = ? 
+2018-06-21 15:14:32,796 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] ==> Parameters: m-01(String)
+2018-06-21 15:14:32,798 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] <==      Total: 1
+2018-06-21 15:14:33,821 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""}]}
+2018-06-21 15:15:25,146 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:15:25,147 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:15:25,147 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:15:26,560 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.456 seconds (JVM running for 728.681)
+2018-06-21 15:15:50,401 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:15:50,401 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:15:50,402 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:15:51,798 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.44 seconds (JVM running for 753.919)
+2018-06-21 15:16:33,092 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_function WHERE parentId = ? 
+2018-06-21 15:16:33,093 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==> Parameters: 0(String)
+2018-06-21 15:16:33,094 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] <==      Total: 6
+2018-06-21 15:16:33,097 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""},{"funcname":"台账管理","functionid":"m-02","parentid":"0","remark":""},{"funcname":"实物清查","functionid":"m-03","parentid":"0","remark":null},{"funcname":"对账管理","functionid":"m-04","parentid":"0","remark":null},{"funcname":"结果统计","functionid":"m-05","parentid":"0","remark":null},{"funcname":"系统管理","functionid":"m-06","parentid":"0","remark":null}]}
+2018-06-21 15:18:29,866 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:18:29,866 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:18:29,867 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:18:31,236 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.41 seconds (JVM running for 913.356)
+2018-06-21 15:19:00,519 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:19:00,520 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:19:00,520 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:19:01,863 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.393 seconds (JVM running for 943.983)
+2018-06-21 15:19:29,231 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:19:29,231 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:19:29,231 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:19:30,596 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.415 seconds (JVM running for 972.716)
+2018-06-21 15:19:46,282 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:19:46,282 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:19:46,282 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:19:47,669 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.435 seconds (JVM running for 989.789)
+2018-06-21 15:19:56,076 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:19:56,076 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:19:56,076 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:19:57,415 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.39 seconds (JVM running for 999.535)
+2018-06-21 15:20:06,917 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:20:06,917 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:20:06,918 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:20:08,239 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.362 seconds (JVM running for 1010.359)
+2018-06-21 15:20:15,577 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:20:15,577 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:20:15,577 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:20:16,839 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.301 seconds (JVM running for 1018.959)
+2018-06-21 15:20:38,749 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_function WHERE parentId = ? 
+2018-06-21 15:20:38,750 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==> Parameters: 0(String)
+2018-06-21 15:20:38,752 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] <==      Total: 6
+2018-06-21 15:20:38,757 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""},{"funcname":"台账管理","functionid":"m-02","parentid":"0","remark":""},{"funcname":"实物清查","functionid":"m-03","parentid":"0","remark":null},{"funcname":"对账管理","functionid":"m-04","parentid":"0","remark":null},{"funcname":"结果统计","functionid":"m-05","parentid":"0","remark":null},{"funcname":"系统管理","functionid":"m-06","parentid":"0","remark":null}]}
+2018-06-21 15:20:56,300 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] ==>  Preparing: SELECT * FROM imp_function f WHERE f.functionId = ? 
+2018-06-21 15:20:56,301 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] ==> Parameters: m-03(String)
+2018-06-21 15:20:56,304 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-2] <==      Total: 1
+2018-06-21 15:21:00,747 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"实物清查","functionid":"m-03","parentid":"0","remark":null}]}
+2018-06-21 15:24:54,602 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-3] ==>  Preparing: SELECT * FROM imp_function WHERE parentId = ? 
+2018-06-21 15:24:54,602 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-3] ==> Parameters: 0(String)
+2018-06-21 15:24:54,607 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-3] <==      Total: 6
+2018-06-21 15:24:54,608 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-3] 序列化后的JSON资料输出:
+{"flag":true,"result":[{"funcname":"项目信息","functionid":"m-01","parentid":"0","remark":""},{"funcname":"台账管理","functionid":"m-02","parentid":"0","remark":""},{"funcname":"实物清查","functionid":"m-03","parentid":"0","remark":null},{"funcname":"对账管理","functionid":"m-04","parentid":"0","remark":null},{"funcname":"结果统计","functionid":"m-05","parentid":"0","remark":null},{"funcname":"系统管理","functionid":"m-06","parentid":"0","remark":null}]}
+2018-06-21 15:27:28,758 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-4] ==>  Preparing: SELECT * FROM imp_function f WHERE f.functionId = ? 
+2018-06-21 15:27:28,759 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-4] ==> Parameters: roo(String)
+2018-06-21 15:27:28,760 DEBUG c.b.m.c.I.selectByPrimaryKey [http-nio-8080-exec-4] <==      Total: 0
+2018-06-21 15:27:30,027 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-4] 序列化后的JSON资料输出:
+{"flag":true,"result":[]}
+2018-06-21 15:29:57,175 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:29:57,176 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:29:57,176 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:29:58,501 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.365 seconds (JVM running for 1600.622)
+2018-06-21 15:30:01,562 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:30:01,562 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:30:01,562 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:30:02,935 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.41 seconds (JVM running for 1605.056)
+2018-06-21 15:30:05,602 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:30:05,603 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:30:05,603 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:30:06,960 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.395 seconds (JVM running for 1609.081)
+2018-06-21 15:37:14,452 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:37:14,452 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:37:14,453 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:37:15,840 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.432 seconds (JVM running for 2037.961)
+2018-06-21 15:37:33,029 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:37:33,029 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:37:33,029 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:37:34,325 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.339 seconds (JVM running for 2056.446)
+2018-06-21 15:37:52,496 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:37:52,497 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:37:52,497 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:37:53,859 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.41 seconds (JVM running for 2075.98)
+2018-06-21 15:39:32,259 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:39:32,260 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:39:32,260 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:39:33,590 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.382 seconds (JVM running for 2175.71)
+2018-06-21 15:40:45,714 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:40:45,715 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:40:45,715 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:40:48,013 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.34 seconds (JVM running for 2250.133)
+2018-06-21 15:41:33,744 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:41:33,745 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:41:33,745 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:41:35,099 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.412 seconds (JVM running for 2297.219)
+2018-06-21 15:41:40,978 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:41:40,978 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:41:40,978 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:41:42,321 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.385 seconds (JVM running for 2304.441)
+2018-06-21 15:44:18,121 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:44:18,122 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:44:18,122 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:44:19,392 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.314 seconds (JVM running for 2461.512)
+2018-06-21 15:45:14,706 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:45:14,707 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:45:14,707 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:45:17,143 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.48 seconds (JVM running for 2519.263)
+2018-06-21 15:47:00,950 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:47:00,950 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:47:00,950 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:47:02,260 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.355 seconds (JVM running for 2624.381)
+2018-06-21 15:47:43,114 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:47:43,114 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:47:43,114 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:47:46,885 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 3.815 seconds (JVM running for 2669.005)
+2018-06-21 15:47:52,229 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:47:52,229 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:47:52,230 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:47:53,514 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.327 seconds (JVM running for 2675.634)
+2018-06-21 15:48:38,863 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:48:38,863 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:48:38,863 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:48:40,155 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.333 seconds (JVM running for 2722.275)
+2018-06-21 15:49:09,959 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==>  Preparing: SELECT * FROM imp_role 
+2018-06-21 15:49:09,960 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] ==> Parameters: 
+2018-06-21 15:49:09,962 DEBUG c.b.m.c.I.queryall [http-nio-8080-exec-1] <==      Total: 7
+2018-06-21 15:53:56,965 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:53:56,965 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:53:56,965 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 15:53:58,219 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.296 seconds (JVM running for 3040.339)
+2018-06-21 15:54:52,364 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 11508 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 15:54:52,364 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 15:54:52,365 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default

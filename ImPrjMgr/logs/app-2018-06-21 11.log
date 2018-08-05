@@ -1,0 +1,12 @@
+2018-06-21 11:07:18,606 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 2676 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 11:07:18,607 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 11:07:18,607 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 11:07:19,865 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.307 seconds (JVM running for 4076.613)
+2018-06-21 11:07:52,574 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 2676 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 11:07:52,575 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 11:07:52,575 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 11:07:53,885 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.356 seconds (JVM running for 4110.634)
+2018-06-21 11:49:03,570 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on PC-20180326CVUY with PID 2676 (E:\svn\ImPrjMgr\target\classes started by Administrator in E:\svn\ImPrjMgr)
+2018-06-21 11:49:03,571 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-21 11:49:03,571 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-21 11:49:05,596 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 2.077 seconds (JVM running for 6582.344)

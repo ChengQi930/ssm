@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.TopicMapper">
+    
+    
+	    <resultMap type="TopicMes" id="topicMes">
+		    <result property="id" column="id"/>
+			<result property="topicName" column="topicName"/>
+			<result property="message" column="message"/>
+			<result property="accountType" column="accountType"/>
+			<result property="operType" column="operType"/>
+			<result property="data1" column="data1"/>
+			<result property="data2" column="data2"/>
+			<result property="assetId" column="assetId"/>
+			<result property="proId" column="proId"/>
+		</resultMap>	
+		
+	    
+	    <sql id="baseColumnList">
+	        id,topicName,message,accountType,operType,data1,data2,assetId,proId
+	    </sql>
+	    
+		
+		<insert id="addMes">
+		    	insert into imp_topic_mes(<include refid="baseColumnList" />) values 
+		    	(#{topicMes.id},#{topicMes.topicName},#{topicMes.message},
+		    	#{topicMes.accountType},#{topicMes.operType},#{topicMes.data1},
+		    	#{topicMes.data2},#{topicMes.assetId},#{topicMes.proId})
+		</insert>
+		
+		
+		<delete id="delMes">
+		    	delete from imp_topic_mes where id=#{id}
+		</delete>
+		
+		
+		<select id="getMesList" resultMap="topicMes">
+	       		select <include refid="baseColumnList" /> from imp_topic_mes
+		</select>
+		
+		
+		<select id="getMesCount"  resultType="java.lang.Integer">
+	       		select count(*) from imp_topic_mes
+		</select>
+			
+</mapper>

@@ -1,0 +1,23 @@
+2018-06-25 17:31:29,516 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 6884 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-25 17:31:29,588 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-25 17:31:29,588 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-25 17:32:13,288 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 10324 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-25 17:32:13,293 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-25 17:32:13,293 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-25 17:37:01,140 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8292 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-25 17:37:01,144 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-25 17:37:01,145 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-25 17:39:22,541 INFO c.b.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 12000 (E:\123\ImPrjMgr\target\classes started by liujie in E:\123\ImPrjMgr)
+2018-06-25 17:39:22,545 DEBUG c.b.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-06-25 17:39:22,545 INFO c.b.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-06-25 17:39:29,030 INFO c.b.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 6.758 seconds (JVM running for 7.884)
+2018-06-25 17:41:17,582 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-25 17:41:17,606 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] ==> Parameters: null
+2018-06-25 17:41:17,632 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-1] <==      Total: 0
+2018-06-25 17:41:17,943 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-1] 序列化后的JSON资料输出:
+{"errmsg":null,"flag":false}
+2018-06-25 17:41:43,064 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==>  Preparing: select proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,proStatus from imp_project where proId=? 
+2018-06-25 17:41:43,066 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] ==> Parameters: 4f218846-5637-41b2-b988-e18a06fb1242(String)
+2018-06-25 17:41:43,073 DEBUG c.b.m.P.getProjectInfoById [http-nio-8080-exec-2] <==      Total: 1
+2018-06-25 17:41:43,074 DEBUG c.b.u.JSONHelper [http-nio-8080-exec-2] 序列化后的JSON资料输出:
+{"flag":true}

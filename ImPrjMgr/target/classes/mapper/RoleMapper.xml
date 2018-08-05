@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.RoleMapper">
+    
+    
+    
+    	<resultMap type="Role" id="role">
+		    <result property="roleId" column="roleId"/>
+			<result property="roleCode" column="roleCode"/>
+			<result property="roleName" column="roleName"/>
+			<result property="remark" column="remark"/>
+		</resultMap>		
+		
+    	
+    	<sql id="baseColumnList">
+    	    roleId,roleName,roleName,remark
+    	</sql>
+    
+    	 
+    	
+    	<insert id="addRole">
+    			insert into imp_role(roleId,roleCode,roleName,remark) values
+    			(#{role.roleId},#{role.roleCode},#{role.roleName},#{role.remark})
+    	</insert>
+    	
+    	
+    	<update id="updateRole">
+    	    	update imp_role
+    	    	<set>
+    	    	    	<if test="role.roleCode!=null and role.roleCode!=''">
+								roleCode=#{role.roleCode},
+						</if>
+						<if test="role.roleName!=null and role.roleName!=''">
+								roleName=#{role.roleName},
+						</if>
+						<if test="role.remark!=null and role.remark!=''">
+								remark=#{role.remark},
+						</if>
+    	    	</set>
+    	    	where roleId=#{role.roleId}
+    	</update>
+    	
+    	
+    	
+    	
+    	<delete id="delRole">
+    	    	 delete from imp_role where roleId=#{roleId}
+    	</delete>
+    	
+    	
+    	
+    	<select id="getRoleList" resultMap="role">
+    	    	select <include refid="baseColumnList"></include>  from imp_role limit #{start},#{limit}
+    	</select>
+    	
+    	
+    	<select id="getRoleCount"  resultType="java.lang.Integer">
+    			select count(*) from imp_role
+    	</select>
+    	
+    	
+    	
+    	<select id="getRoleInfo"  resultMap="role">
+    	    	select <include refid="baseColumnList"></include> from imp_role where roleId=#{roleId}
+    	</select>
+    	
+    	
+    	
+    	<select id="isRoleNameExist" resultType="java.lang.Integer">
+    	    	select count(*) from imp_role where roleName=#{roleName}
+    	</select>
+    	
+    	
+    	<select id="getRoleInfoByUserId" resultMap="role">
+    	    	select * from imp_role r left join imp_user_role ur on r.roleId=ur.roleId where ur.userId=#{userId}
+    	</select>
+    	
+	   	
+</mapper>

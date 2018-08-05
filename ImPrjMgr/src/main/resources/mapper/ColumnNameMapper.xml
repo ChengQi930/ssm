@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.ColumnNameMapper">
+    
+		<select id="getColumnNameByFieldName" resultType="java.lang.String">
+		    		select columnName from imp_column_name where type=#{type} and fieldName=#{fieldName} 
+		</select>
+		
+		
+		<select id="getJqSwCommonField" resultType="cn.bizowner.dto.impl.BaseDto">
+		    	SELECT fieldName,columnName FROM imp_column_name
+				WHERE type = '3' AND fieldName IN (SELECT fieldName FROM imp_column_name WHERE type = '4')
+		</select>
+		
+</mapper>

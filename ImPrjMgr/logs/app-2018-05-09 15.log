@@ -1,0 +1,30 @@
+2018-05-09 15:23:29,828 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8696 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:23:29,935 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:23:29,936 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:23:37,658 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 8.715 seconds (JVM running for 12.645)
+2018-05-09 15:26:04,617 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8932 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:26:04,623 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:26:04,624 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:26:09,148 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 4.826 seconds (JVM running for 6.887)
+2018-05-09 15:38:38,300 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 7844 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:38:38,305 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:38:38,305 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:38:42,869 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 4.87 seconds (JVM running for 6.0)
+2018-05-09 15:41:53,744 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 7844 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:41:53,745 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:41:53,745 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:41:54,975 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 1.283 seconds (JVM running for 198.099)
+2018-05-09 15:42:35,477 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 9968 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:42:35,481 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:42:35,481 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:42:38,659 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 3.427 seconds (JVM running for 4.204)
+2018-05-09 15:44:52,626 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 7852 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:44:52,630 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:44:52,630 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:44:56,113 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 3.73 seconds (JVM running for 4.571)
+2018-05-09 15:45:59,369 INFO c.j.MySpringBootDemo [restartedMain] Starting MySpringBootDemo on liujie-PC with PID 8272 (started by liujie in F:\svn\对账系统\AccountMgt)
+2018-05-09 15:45:59,375 DEBUG c.j.MySpringBootDemo [restartedMain] Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-05-09 15:45:59,375 INFO c.j.MySpringBootDemo [restartedMain] No active profile set, falling back to default profiles: default
+2018-05-09 15:46:03,660 INFO c.j.MySpringBootDemo [restartedMain] Started MySpringBootDemo in 4.558 seconds (JVM running for 5.617)
+2018-05-09 15:49:07,899 DEBUG c.j.u.JSONHelper [http-nio-8080-exec-5] 序列化后的JSON资料输出:
+{"deptId":"[64509127]","deptName":null,"mc":"刘杰","mobile":"15229895142","roleCodes":null,"status":null,"userId":"0951370504677976"}

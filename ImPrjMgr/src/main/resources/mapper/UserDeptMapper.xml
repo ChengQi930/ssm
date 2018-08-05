@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.UserDeptMapper">
+    
+    
+    
+    	<resultMap type="UserDept" id="userDept">
+		    <result property="userId" column="userId"/>
+		    <result property="deptId" column="deptId"/>
+			<result property="deptName" column="deptName"/>
+		</resultMap>		
+    	
+    
+    
+    	<insert id="addUserDept">
+    	  		insert into imp_user_dept(userId,deptId,deptName) values (#{userDept.userId},#{userDept.deptId},#{userDept.deptName})  
+    	</insert>
+    	
+    	
+    	
+    	<delete id="delUserDeptByUserId">
+    	    delete from   imp_user_dept where userId=#{userId}
+    	</delete>
+    	 
+    	
+	   	<select id="getUserDeptByUserId" resultMap="userDept">
+    	  		select userId,deptId,deptName from imp_user_dept where userId=#{userId}
+    	</select>
+    	
+	   	
+	  
+	   	 
+</mapper>

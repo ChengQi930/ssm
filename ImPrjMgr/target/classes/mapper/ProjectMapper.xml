@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bizowner.mapper.ProjectMapper">
+    
+    
+	    <resultMap type="ProjectInfo" id="projectInfo">
+		    <result property="proId" column="proId"/>
+			<result property="proName" column="proName"/>
+			<result property="proType" column="proType"/>
+			<result property="estTime" column="estTime"/>
+			<result property="createUser" column="createUserId"/>
+			<result property="createTime" column="createTime"/>
+			<result property="impUser" column="impUserId"/>
+			<result property="saleUser" column="saleUserId"/>
+			<result property="customer" column="customer"/>
+			<result property="money" column="money"/>
+			<result property="finishTime" column="finishTime"/>
+			<result property="proStatus" column="proStatus"/>
+			<result property="proNo" column="proNo"/>
+		</resultMap>	
+		
+	    
+	    
+	    <sql id="baseColumnList">
+				proId,proName,proType,estTime,createTime,createUserId,impUserId,saleUserId,customer,money,finishTime,proStatus,proNo
+		</sql>
+		
+	    
+	    
+	    <sql id="baseSelColumnList">
+				proId,proName,proType,estTime,createTime,
+  				(select mc from imp_user where userId=createUserId) as createUserId,
+				(select mc from imp_user where userId=impUserId) as impUserId,
+				(select mc from imp_user where userId=saleUserId) as saleUserId,
+				customer,money,finishTime,proStatus,proNo
+		</sql>
+		
+	    
+	    
+	    
+	    
+	    <sql id="proQueryCond">
+				<if test="proName!=null and proName!=''">
+					and proName=#{proName}
+				</if>	
+				<if test="mainStatus!=null and mainStatus!=''">
+					and proStatus=#{mainStatus}
+				</if>	
+				<if test="subStatus!=null and subStatus!=''">
+					 <choose>
+							<when test="subStatus==1">
+								<![CDATA[ and estTime>=date_format(now(),'%Y-%m-%d') ]]>
+							</when>
+							<when test="subStatus==2">
+								<![CDATA[ and estTime<date_format(now(),'%Y-%m-%d') ]]>
+							</when>
+							<when test="subStatus==3">
+								<![CDATA[ and estTime>finishTime ]]>
+							</when>
+							<when test="subStatus==4">
+								<![CDATA[ and estTime=finishTime ]]>
+							</when>
+							<when test="subStatus==5">
+								<![CDATA[ and estTime<finishTime ]]>
+							</when>
+							<when test="subStatus==6">
+								<![CDATA[ and proStatus=3 ]]>
+							</when>
+						</choose>
+				</if>
+	</sql>
+	    
+	    
+	    
+	    
+	    
+		    
+		
+		<insert id="addPro">
+		    	insert into imp_project(<include refid="baseColumnList" />) values 
+		    	(#{projectInfo.proId},#{projectInfo.proName},#{projectInfo.proType},#{projectInfo.estTime},
+		    	#{projectInfo.createTime},#{projectInfo.createUser},#{projectInfo.impUser},
+		    	#{projectInfo.saleUser},#{projectInfo.customer},#{projectInfo.money},#{projectInfo.finishTime},#{projectInfo.proStatus},#{projectInfo.proNo})
+		</insert>
+		
+		
+		
+		
+		<update id="updatePro">
+		    	update imp_project
+		    	<set>
+		    	    	<if test="projectInfo.proName!=null and projectInfo.proName!=''">
+								proName=#{projectInfo.proName},
+						</if>	
+						<if test="projectInfo.proType!=null and projectInfo.proType!=''">
+								proType=#{projectInfo.proType},
+						</if>
+						<if test="projectInfo.estTime!=null and projectInfo.estTime!=''">
+								estTime=#{projectInfo.estTime},
+						</if>
+						<if test="projectInfo.impUser!=null and projectInfo.impUser!=''">
+								impUserId=#{projectInfo.impUser},
+						</if>
+						<if test="projectInfo.saleUser!=null and projectInfo.saleUser!=''">
+								saleUserId=#{projectInfo.saleUser},
+						</if>
+						<if test="projectInfo.customer!=null and projectInfo.customer!=''">
+								customer=#{projectInfo.customer},
+						</if>
+						<if test="projectInfo.proStatus!=null and projectInfo.proStatus!=''">
+								proStatus=#{projectInfo.proStatus},
+						</if> 
+						<if test="projectInfo.money!=null and projectInfo.money!=''">
+								money=#{projectInfo.money}
+						</if>
+		    	</set>
+		    	where proId=#{projectInfo.proId}
+		</update>
+		
+		 
+		<delete id="delPro">
+		    	delete from imp_project where proId=#{proId}
+		</delete>
+		
+		
+		
+	<select id="getProjectCount" resultType="java.lang.Integer">
+		select count(*) from imp_project where 1=1
+		<include refid="proQueryCond"></include>
+	</select>
+
+
+
+
+	<select id="getProjectList" resultMap="projectInfo">
+		select <include refid="baseSelColumnList" />
+		from imp_project where 1=1 
+		<include refid="proQueryCond"></include>
+		limit #{limit} offset #{start}
+	</select>
+	
+	
+	
+	<select id="getProjectInfoById" resultMap="projectInfo">
+		select <include refid="baseColumnList" />
+		from imp_project where proId=#{proId}
+	</select>
+	<select id="getUserIdById" resultType="java.lang.String">
+	    SELECT p.impUserId FROM imp_project p
+        where p.proId = #{proId}
+	</select>
+	
+	<select id="getproNo" resultType="java.lang.String">
+	    SELECT proNo FROM imp_project
+        WHERE proId = #{proId}
+	</select>
+</mapper>
